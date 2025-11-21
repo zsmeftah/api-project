@@ -51,3 +51,7 @@ class User(UserBase):
     is_active: bool
     class Config:
         from_attributes = True
+
+class StatsResponse(BaseModel):
+    labels: List[str]
+    series: List[float]
