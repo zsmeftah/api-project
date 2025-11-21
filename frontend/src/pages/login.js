@@ -25,7 +25,7 @@ const Login = () => {
 
     return (
         <div style={{ maxWidth: '400px', margin: '50px auto', padding: '20px', border: '1px solid #ccc' }}>
-            <h2>Connexion EcoTrack</h2>
+            <h2>Connexion</h2>
             {error && <p style={{ color: 'red' }}>{error}</p>}
             <form onSubmit={handleSubmit}>
                 <div style={{ marginBottom: '10px' }}>

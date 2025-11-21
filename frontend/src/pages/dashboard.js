@@ -30,8 +30,18 @@ const Dashboard = () => {
     return (
         <div style={{ padding: '20px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <h1>Tableau de bord EcoTrack</h1>
-                <button onClick={logout} style={{ padding: '10px', backgroundColor: '#f44336', color: 'white', border: 'none' }}>Déconnexion</button>
+                <h1>Tableau de bord</h1>
+                <div>
+                    <button 
+                        onClick={() => window.location.href = '/admin'} 
+                        style={{ padding: '10px', marginRight: '10px', backgroundColor: '#2196F3', color: 'white', border: 'none' }}
+                    >
+                        Ajout Donnée (Admn)
+                    </button>
+                    <button onClick={logout} style={{ padding: '10px', backgroundColor: '#f44336', color: 'white', border: 'none' }}>
+                        Déconnexion
+                    </button>
+                </div>
             </div>
 
             <div style={{ height: '300px', margin: '20px 0' }}>
